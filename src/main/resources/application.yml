@@ -24,3 +24,18 @@ server:
       max: 800
       # Tomcat启动初始化的线程数，默认值10
       min-spare: 100
+
+  # mysql 配置
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.197.133:3306/rifle_fast?useSSL=false&serverTimezone=UTC&useUnicode=true&characterEncoding=utf8
+    username: root
+    password: 123456
+
+
+mybatis-plus:
+  global-config:
+    db-config:
+      id-type: ASSIGN_ID
