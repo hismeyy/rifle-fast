@@ -24,7 +24,6 @@ class RifleFastApplicationTests {
         SysUser sysUser = new SysUser();
         sysUser.setUsername("小天");
         sysUser.setPassword("123456");
-        sysUser.setIsDeleted(0);
         sysUserMapper.insert(sysUser);
         QueryWrapper<SysUser> sysUserQueryWrapper = new QueryWrapper<SysUser>();
         System.out.println(sysUserMapper.selectList(sysUserQueryWrapper));
