@@ -1,4 +1,4 @@
-package com.rifle.common.config;
+package com.rifle.common.generator;
 
 import cn.hutool.core.util.IdUtil;
 import com.baomidou.mybatisplus.core.incrementer.IdentifierGenerator;
