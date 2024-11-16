@@ -1,9 +1,9 @@
-package com.rifle.system.user.service.impl;
+package com.rifle.userModule.system.user.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import com.rifle.system.user.domain.SysUser;
-import com.rifle.system.user.mapper.SysUserMapper;
-import com.rifle.system.user.service.SysUserService;
+import com.rifle.userModule.system.user.domain.SysUser;
+import com.rifle.userModule.system.user.mapper.SysUserMapper;
+import com.rifle.userModule.system.user.service.SysUserService;
 import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;

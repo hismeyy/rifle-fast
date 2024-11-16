@@ -1,8 +1,8 @@
-package com.rifle.system.user.controller;
+package com.rifle.userModule.system.user.controller;
 
 import com.rifle.common.pojo.CommonResult;
-import com.rifle.system.user.domain.SysUser;
-import com.rifle.system.user.service.SysUserService;
+import com.rifle.userModule.system.user.domain.SysUser;
+import com.rifle.userModule.system.user.service.SysUserService;
 import jakarta.annotation.Resource;
 import org.springframework.web.bind.annotation.*;
 
@@ -51,6 +51,5 @@ public class SysUserController {
     public CommonResult<Integer> submit(@RequestBody SysUser sysUser) {
         return success(sysUserService.submitSysUser(sysUser));
     }
-
 
 }
