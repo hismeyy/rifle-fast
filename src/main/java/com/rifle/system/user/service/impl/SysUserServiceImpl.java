@@ -5,10 +5,12 @@ import com.rifle.system.user.domain.SysUser;
 import com.rifle.system.user.mapper.SysUserMapper;
 import com.rifle.system.user.service.SysUserService;
 import jakarta.annotation.Resource;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Slf4j
 @Service
 public class SysUserServiceImpl implements SysUserService {
 

@@ -30,7 +30,8 @@ server:
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://192.168.197.133:3306/rifle_fast?useSSL=false&serverTimezone=UTC&useUnicode=true&characterEncoding=utf8
+    # url: jdbc:mysql://192.168.197.133:3306/rifle_fast?useSSL=false&serverTimezone=UTC&useUnicode=true&characterEncoding=utf8
+    url: jdbc:mysql://192.168.10.108:3307/rifle_fast?useSSL=false&serverTimezone=UTC&useUnicode=true&characterEncoding=utf8
     username: root
     password: 123456
 
@@ -39,3 +40,11 @@ mybatis-plus:
   global-config:
     db-config:
       id-type: ASSIGN_ID
+      logic-delete-field: isDelete # 全局逻辑删除字段名
+      logic-delete-value: 1 # 逻辑已删除值
+      logic-not-delete-value: 0 # 逻辑未删除值
+
+logging:
+  file:
+    path: D:/my-project/rifle-fast/logs
+    name: rifle-fast
