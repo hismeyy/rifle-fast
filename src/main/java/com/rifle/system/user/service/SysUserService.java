@@ -14,7 +14,10 @@ public interface SysUserService {
 
     Integer updateSysUser(SysUser sysUser);
 
+    Integer deleteSysUser(Long userId);
+
     Integer saveSysUser(SysUser sysUser);
 
     Integer submitSysUser(SysUser sysUser);
+
 }

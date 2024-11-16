@@ -37,6 +37,11 @@ public class SysUserController {
         return success(sysUserService.updateSysUser(sysUser));
     }
 
+    @DeleteMapping("/delete/{userId}")
+    public CommonResult<Integer> delete(@PathVariable("userId") Long userId) {
+        return success(sysUserService.deleteSysUser(userId));
+    }
+
     @PostMapping("/save")
     public CommonResult<Integer> save(@RequestBody SysUser sysUser) {
         return success(sysUserService.saveSysUser(sysUser));

@@ -37,6 +37,11 @@ public class SysUserServiceImpl implements SysUserService {
     }
 
     @Override
+    public Integer deleteSysUser(Long userId) {
+        return sysUserMapper.deleteById(userId);
+    }
+
+    @Override
     public Integer saveSysUser(SysUser sysUser) {
         return null;
     }
