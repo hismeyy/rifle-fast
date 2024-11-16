@@ -1,37 +1,28 @@
 package com.rifle.common.pojo;
 
+import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
 
 import java.io.Serializable;
 
-/**
- * 通用返回
- *
- * @param <T> 数据泛型
- */
+@Schema(description = "通用返回")
 @Data
 public class CommonResult<T> implements Serializable {
 
-    /**
-     * 错误码
-     */
+    @Schema(description = "错误码")
     private Integer code;
 
-    /**
-     * 返回数据
-     */
+    @Schema(description = "返回数据")
     private T data;
 
-    /**
-     * 错误提示，用户可阅读
-     */
+    @Schema(description = "错误提示，用户可阅读")
     private String msg;
 
     public static <T> CommonResult<T> success(T data) {
         CommonResult<T> result = new CommonResult<>();
         result.code = 1;
         result.data = data;
-        result.msg = "操作成功";
+        result.msg = "";
         return result;
     }
 

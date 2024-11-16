@@ -2,9 +2,8 @@ package com.rifle;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.toolkit.IdWorker;
-import com.baomidou.mybatisplus.extension.conditions.query.QueryChainWrapper;
-import com.rifle.system.user.domain.SysUser;
-import com.rifle.system.user.mapper.SysUserMapper;
+import com.rifle.userModule.system.user.domain.SysUser;
+import com.rifle.userModule.system.user.mapper.SysUserMapper;
 import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

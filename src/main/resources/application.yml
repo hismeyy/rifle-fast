@@ -48,3 +48,13 @@ logging:
   file:
     path: D:/my-project/rifle-fast/logs
     name: rifle-fast
+
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+    group: default
+    enabled: true
+  swagger-ui:
+    path: /swagger-ui.html
+    base-url: /api
+    enabled: true
